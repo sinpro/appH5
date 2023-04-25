@@ -1,0 +1,128 @@
+/*
+ *   MINIMIZE RESET STYLES
+ *    @Author Liuls  
+ *
+ */
+ @import './mixin.scss';
+ $font-family-special:'Helvetica Neue';
+ 
+ //主要色彩
+ $color-red: #e52e43;
+ $color-pink: #ff6a82;
+ $color-green: #66c476;
+ 
+ //文字色值
+ $font-color-t1: #1f1f1f;
+ $font-color-t2: #aab1bc;
+ $font-color-t3: #cacaca;
+ $font-color-t4: #3f8ff0;
+ $font-color-t5: #ffffff;
+ $font-color-t6: #333;
+ 
+ //背景和分隔线颜色
+ $line-color: #e5e5e5; //分隔线
+ $part-bg: #f9f9f9;    //局部背景
+ $global-bg: #ffffff;  //全局背景
+ 
+ //按钮的色彩，还在使用，不用后删除
+ $color-cm: #e53935;   //color main  red
+ $color-cb: #6161F2;   //color blue
+ $color-co: #F0472B;   //color orange
+ $color-cg: #e0bf70;   //color gold
+ 
+ 
+ //字体排版
+ $font-h1: .48rem; //用于导航标题，全局按钮
+ $font-h2: .42rem; //用于列表标题
+ $font-h3: .38rem; //用于导航两侧文字按钮、文本标题、正文
+ $font-h4: .36rem; //用于副标题、段落正文、正文、二级banner、tabbar切换文字、表单小题/副标题
+ $font-h5: .34rem; //用于副标题、辅助性或提示文字、小按钮文字
+ $font-h6: .32rem; //用于副标题、辅助性或提示文字
+ $font-h7: .30rem; //用于排序、进度条文字、列表标题
+ $font-h8: .28rem; //用于大部分文本
+ $font-h9: .26rem; //小按钮文字
+ // 18 - 22px用于标签文案
+ 
+ //以上为整理过的最新规范
+ $color-gray: #9B9B9B;
+ $color-gray-light: #fbfbfb;
+ $color-font: #222222;
+ $color-font-second: #666666;
+ $color-font-third: #8f8f8f;
+ $color-font-fourth: #bbbbbb;
+ $color-blue: #319df5;
+ $color-golden: #e0bf70;
+ $color-red: #F0472B;
+ $color-orange: #f47000;
+ $color-white: #ffffff;
+ $divider-bg: #eeeeee;
+ $divider-height: 1px;
+ $header-height: .88rem;
+ 
+ $fs20:0.2rem;
+ $fs22:0.22rem;
+ $fs24:0.24rem;
+ $fs26:0.26rem;
+ $fs28:0.28rem;
+ $fs30:0.30rem;
+ $fs32:0.32rem;
+ $fs36:0.36rem;
+ 
+ $lh30:0.3rem;
+ $lh32:0.32rem;
+ $lh34:0.34rem;
+ $lh36:0.36rem;
+ $lh38:0.38rem;
+ $lh42:0.42rem;
+ $lh46:0.46rem;
+ 
+ //整体页面常规的左右32px间隙
+ $spacing:0.32rem;
+ 
+ //顺序按照高保真图，从左往右
+ $ynet-dark-red: #F0472B;//与原来主调色一样
+ $ynet-dark-purple: #6161F2;
+ $ynet-nav-color: #393a3e;
+ $ynet-title-color: #333;
+ $ynet-text-color: #666;
+ $ynet-subtitle-color: #999;
+ 
+ $ynet-input-color: #b3b3b3;
+ $ynet-divide-color: #eee;
+ $ynet-background-color:#f5f5f9;
+ $ynet-sup-divide-color: #ccc;
+ $ynet-blue: #007aff;
+ $ynet-button-blue: #6161F2;
+ 
+ $ynet-light-red: #F0472B;
+ $ynet-green: #1db299;
+ 
+ //按钮不可点击灰色背景
+ $btn-disable-color:#b3afaf;
+ 
+ //cell样式
+ $active-background-color: #faf8f7;
+ $default-background-color: #fff;
+ $spacing: 0.32rem;
+ $cell-height: 0.98rem;
+ 
+ //大箭头
+ $big-arrow: url('~@/common/cssBundle/assets/icon/arrow.png');
+ //旧规范和名称，未来将会废除
+ $theme-color: #d33b30;
+ $secondaryNav-color: #393a3e;
+ $importantInfo-color: #333;
+ // $text-color: #666;
+ $text-color: #b3b3b3;
+ $subtitle-color: #999;
+ $descrFont-color: #b3b3b3;
+ $separation-color: #e0e0e0;
+ // $interface-color: #eff0f5;旧背景色
+ $interface-color: #f5f5f9; //新规范的背景色
+ $stroke-color: #ccc;
+ $proFont-color: #007aff;
+ $supportFont1-color: #ff4f3f;
+ $supportFont2-color: #1bd299;
+ 
+ 
+ 

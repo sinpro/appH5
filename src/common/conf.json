@@ -1,0 +1,9 @@
+{
+    "cssBundle": {
+        "type": "css"
+    },
+    "initBundle": {
+        "exports":["vue", "vuex", "fastclick", "vue-init"],
+        "required": true
+    }
+}

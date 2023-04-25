@@ -1,0 +1,139 @@
+//小实心三角形箭头
+$small-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU1MURCQzQ0OTM5MzExRTc5OTI5QTBGMzc2QTE4NkZBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU1MURCQzQ1OTM5MzExRTc5OTI5QTBGMzc2QTE4NkZBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTUxREJDNDI5MzkzMTFFNzk5MjlBMEYzNzZBMTg2RkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTUxREJDNDM5MzkzMTFFNzk5MjlBMEYzNzZBMTg2RkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5blWKkAAAAW0lEQVR42mI8c+bMNAYGhkwG/GA6E5DIBeJ9eBSB5PJACv8CcRAQ38GiCCQWDMR/mKACH4HYE0ozIIl5AfEHEIcJTXcQ1Ia/UJNuwyRZsLgH5GZGIN6LLAEQYACq/BVK8myjHQAAAABJRU5ErkJggg==');
+.ynet-cell {
+    @include cell--mixin;
+    // height:auto;
+    &__title {
+        display: inline-block;
+    }
+    .ynet-cell__icon {
+        // display: flex;
+        .icon {
+            display: inline-block;
+            height: 0.38rem;
+            width: 0.38rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 0.24rem;
+        }
+    }
+    .ynet-cell__value {
+        min-height: $cell-height;
+        min-width: 3.5rem;
+        // max-width: 3.8rem;
+        // max-width: 4.48rem;
+        flex: 1;
+        -webkit-flex: 1;
+        text-align: right;
+    }
+    .ynet-cell__value--nowrap{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .purple{
+        color:#6161F2;
+    }
+    .color666 {
+        color: $ynet-text-color;
+    }
+    .red {
+        color: #F0472B;
+    }
+    .blue{
+        color: #6161F2
+    }
+    .light-red {
+        color: $ynet-light-red;
+    }
+    .gray {
+        color: $ynet-input-color;
+    }
+    .green {
+        color: $ynet-green;
+    }
+    .black {
+        color: $ynet-title-color;
+    }
+    .cancel-max-width {
+        max-width: none;
+    }
+    .cancel-min-width {
+        min-width: 0;
+    }
+    .multi-row {
+        display: inline-block;
+        //0.33-( 0.44 - 0.32 )/2= 0.27
+        padding: 0.27rem 0;
+        line-height: 0.44rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        vertical-align: bottom;
+        // text-align: left;
+    }
+    .ynet-cell__arrow {
+        position: relative;
+        display: inline-block;
+        width: 0.7rem;
+        height: auto;
+        &::after {
+            position: absolute;
+            right: $spacing;
+            top: 50%;
+            margin-top: -7px;
+            display: block;
+            width: 7px;
+            height: 14px;
+            content: '';
+            background-size: cover;
+            background-image: $big-arrow;
+        }
+    }
+    .ynet-cell__icon--round {
+        height: 0.6rem;
+        width: 0.6rem;
+        margin: auto $spacing auto 0.16rem;
+        background: #f5f5f9;
+        border-radius: 50%;
+    }
+    .big {
+        &::after {
+        }
+    }
+    .small {
+        &::after {
+            margin-top: -0.06rem;
+            width: 0.2rem;
+            height: 0.12rem;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: $small-arrow;
+        }
+    }
+    .up {
+        &::after {
+            // right: 0.24rem;
+            transform: rotate(90deg);
+            transition: transform 0.3s;
+        }
+    }
+    .down {
+        &::after {
+            // right: 0.24rem;
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            transition: transform 0.3s;
+            -webkit-transition: transform 0.3s;
+        }
+    }
+
+}
+
+.is-active {
+    &:active{
+        background: $active-background-color;
+    }
+}
+// .ynet-cell__title{
+//     color:#999999;
+// }

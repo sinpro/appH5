@@ -1,0 +1,1182 @@
+/*-----------------------------模板样式------------------------------*/
+
+// 模板底部浮层1 无标题
+.footer-template-one {
+    .action-sheet {
+        // opacity: 0.4;
+        .header {
+            height: 0.64rem;
+            line-height: 0.64rem;
+            color: $descrFont-color;
+            background-color: #f7f7f7;
+            font-size: inherit;
+        }
+    }
+    .weui-actionsheet__cell {
+        margin: 0;
+        padding: 0;
+        font-size: 0.26rem;
+
+    }
+    .weui-actionsheet__menu {
+        .vux-actionsheet-menu-default {
+            height: 0.98rem;
+            font-size: 0.32rem;
+            line-height: 0.98rem;
+            color: $importantInfo-color;
+        }
+        .weui-actionsheet__cell:before{
+            height: 0;
+            border-top: 1px solid #e0e0e0;
+        }
+        .vux-actionsheet-menu-default:active{
+            background: #fff;
+            font-weight: bold;
+        }
+    }
+    .weui-actionsheet__action {
+        margin-top: 0.1rem;
+        .weui-actionsheet__cell {
+            height: 0.98rem;
+            font-size: 0.32rem;
+            line-height: 0.98rem;
+        }
+    }
+}
+
+// 模板底部浮层1 有标题
+.footer-template-two {
+    .action-sheet {
+        // opacity: 0.4;
+        .header {
+            height: 0.64rem;
+            line-height: 0.64rem;
+            color: $descrFont-color;
+            background-color: #f7f7f7;
+            font-size: inherit;
+        }
+    }
+    .weui-actionsheet__cell {
+        margin: 0;
+        padding: 0;
+        font-size: 0.26rem;
+    }
+    .weui-actionsheet__menu {
+        .vux-actionsheet-menu-default {
+            height: 0.98rem;
+            font-size: 0.32rem;
+            line-height: 0.98rem;
+            color: $importantInfo-color;
+        }
+        .weui-actionsheet__cell:before{
+            height: 0;
+            border-top: 1px solid #e0e0e0;
+        }
+        .vux-actionsheet-menu-default:active{
+            background: #fff;
+            font-weight: bold;
+        }
+    }
+    .weui-actionsheet__menu :nth-child(2):before{
+            border-top: 0 !important;
+            height: 0 !important;
+    }
+    .weui-actionsheet__action {
+        margin-top: 0.1rem;
+        .weui-actionsheet__cell {
+            height: 0.98rem;
+            font-size: 0.32rem;
+            line-height: 0.98rem;
+        }
+    }
+}
+
+// 模板底部浮层2
+// popup-picker组件弹出框组件样式
+.v-transfer-dom {
+    .vux-popup-header {
+        height: 0.64rem;
+        line-height: 0.64rem;
+        color: $descrFont-color;
+        background-color: #f7f7f7;
+        .vux-popup-header-left {
+            font-size: 0.3rem;
+            color: $importantInfo-color;
+        }
+        .vux-popup-header-right {
+            font-size: 0.3rem;
+            color: $importantInfo-color;
+        }
+        .vux-popup-header-title {
+            font-size: 0.26rem;
+            color: $descrFont-color;
+            background-color: #f7f7f7;
+        }
+    }
+    .vux-picker {
+        background-color: #fff;
+        .scroller-item {
+            font-size: 0.32rem;
+            color: $importantInfo-color;
+        }
+    }
+}
+
+// toast模板
+.toast {
+    p.weui-toast__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    // 含图标的toast样式
+    .show-toast {
+        element.style {
+            line-height: 0;
+        }
+        .weui-toast {
+            background: #000000;
+            opacity: 0.7;
+        }
+        .weui-toast.weui-toast_text {
+            height: 1.8rem;
+            border-radius: 0.08rem;
+        }
+        img {
+            display: inline-block;
+            width: 0.44rem;
+            height: 0.44rem;
+            padding-top: 0.4rem;
+            padding-bottom: 0.3rem;
+        }
+        .weui-toast__content {
+            font-size: 0.3rem;
+            padding: 0;
+        }
+    } // 不含图标的toast样式
+    .show-toast-text {
+        display: flex;
+        .weui-toast {
+            background: #000000;
+            opacity: 0.7;
+        }
+        .weui-toast.weui-toast_text {
+            height: 1.8rem;
+            border-radius: 0.08rem;
+        }
+        .weui-toast.weui-toast_text.vux-toast-middle {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .weui-toast_text .weui-toast__content {
+            padding: 0;
+        }
+        .weui-toast__content {
+            font-size: 0.3rem;
+        }
+
+    }
+
+}
+
+// 日期模板
+.dp-container {
+    .dp-header {
+        height: 0.7rem;
+        .vux-datetime-confirm {
+            padding-right: 0.32rem;
+        }
+    }
+    .dp-item.dp-left.vux-datetime-cancel {
+        font-size: 0.3rem;
+        color: #333;
+    }
+    .dp-item.vux-datetime-clear {
+        font-size: 0.3rem;
+        color: #999;
+    }
+    .dp-item.dp-right.vux-datetime-confirm {
+        font-size: 0.3rem;
+        color: #333;
+    }
+    .scroller-item {
+        font-size: 0.32rem;
+        color: #333;
+    }
+    .line-height {
+        line-height: 0.34rem;
+    }
+}
+
+// 模版弹框-对话框(有取消和确定两个按钮,有标题)
+.confirm-demo {
+    .weui-mask {
+        background: #000;
+        opacity: 0.4;
+    }
+    .weui-dialog {
+        border-radius: 0.16rem;
+        max-width: 6rem;
+        .weui-dialog__hd {
+            color: $importantInfo-color;
+            padding: 0.4rem 0rem 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .weui-dialog__title {
+                font-size: 0.32rem;
+                line-height: 0.33rem;
+            }
+        }
+        .weui-dialog__bd {
+            color: $text-color;
+            line-height: 0.38rem;
+            padding: 0 0.65rem 0.6rem;
+            font-size: 0.28rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .weui-dialog__ft {
+            .weui-dialog__btn {
+                line-height: 0.3rem;
+                padding: 0.3rem 0;
+                font-size: 0.3rem;
+            }
+            .weui-dialog__btn_default {
+                color: $subtitle-color;
+            }
+            .weui-dialog__btn_primary {
+                color: $proFont-color;
+            }
+        }
+    }
+}
+
+// 模版弹框-对话框(有取消和确定两个按钮,无标题)
+.confirm-demo-noTitle {
+    @extend .confirm-demo;
+    .weui-dialog {
+        .weui-dialog__bd {
+            color: $importantInfo-color;
+            line-height: 0.42rem;
+            padding: .48rem 0.65rem 0.6rem;
+            font-size: 0.32rem;
+            font-weight: bold;
+        }
+    }
+}
+
+// 模版弹框-对话框(只有一个确定按钮，无标题)
+.alert-demo {
+    @extend .confirm-demo;
+    .weui-dialog {
+        .weui-dialog__hd {
+            padding: 0.6rem 0rem 0.22rem;
+        }
+        .weui-dialog__bd {
+            color: $importantInfo-color;
+            line-height: 0.42rem;
+            font-size: 0.32rem;
+        }
+    }
+}
+
+// 模版弹框-按钮(x-switch,可以点击)
+.demo{
+    .vux-x-switch.weui-cell_switch{
+        padding: 0;
+    }
+    .weui-switch{
+        width: 1.02rem;
+        height: 0.62rem;
+        border: 0;
+        border-radius: 0.32rem;
+    }
+}
+.switch-demo-click {
+    .weui-switch:before,
+    .weui-switch-cp__box {
+        width: 1.02rem;
+        height: 0.62rem;
+        background-color: #fff;
+        border:0.009rem solid #b3afaf;
+    }
+    .weui-switch:after, .weui-switch-cp__box:after{
+        width: 0.62rem;
+        height: 0.62rem;
+        border-radius: 0.32rem;
+    }
+    .weui-switch:checked,
+    .weui-switch-cp__input:checked~.weui-switch-cp__box {
+        color: $theme-color;
+        background-color: $theme-color;
+        border-color: $theme-color;
+    }
+    .weui-switch:checked:after, .weui-switch-cp__input:checked ~ .weui-switch-cp__box:after{
+        transform: translateX(0.4rem);
+    }
+}
+
+// 模版弹框-按钮(x-switch,不可以点击)
+.switch-demo-prohibit {
+    @extend .switch-demo-click;
+    .weui-switch:checked,
+    .weui-switch-cp__input:checked~.weui-switch-cp__box {
+        color: #b3afaf;
+        background-color: #b3afaf;
+        border-color: #b3afaf;
+        opacity: 0.8;
+    }
+}
+
+// 模版弹框-按钮(x-switch,点击一次后不可点击)
+.switch-demo-prohibit-after {
+    @extend .switch-demo-click;
+    .weui-switch:checked,
+    .weui-switch-cp__input:checked~.weui-switch-cp__box {
+        color: #b3afaf;
+        background-color: #b3afaf;
+        border-color: #b3afaf;
+        opacity: 0.8;
+    }
+}
+
+// 温馨提示tips
+.tips-demo {
+    margin-top: .4rem;
+    padding: 0 .32rem;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .tips-demo-title {
+        line-height: 1;
+        font-size: .24rem;
+        color: $ynet-subtitle-color;
+    }
+    .tips-demo-content {
+        font-size: .22rem;
+        text-align: justify;
+        padding-top: .14rem;
+        line-height: 0.26rem;
+        color: $ynet-input-color;
+    }
+}
+// 第二种温馨提示tips,文字之间没有padding
+.tips-demo2 {
+    margin-top: .4rem;
+    padding: 0 .32rem;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .tips-demo-title {
+        line-height: 1;
+        font-size: .24rem;
+        color: $ynet-subtitle-color;
+    }
+    .tips-demo-content {
+        font-size: .22rem;
+        text-align: justify;
+        color: $ynet-input-color;
+    }
+}
+
+// 模板操作结果
+.title-tag {
+    padding: 0.6rem 0.32rem 0.3rem 0.32rem;
+    // margin-bottom: 0.3rem;
+    display: flex;
+    box-sizing: border-box;
+    // background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    .title-template-one {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    .title-template-two {
+        font-size: 0.36rem;
+        color: $importantInfo-color;
+        margin: 0 0 0.2rem 0;
+        line-height:1;
+    }
+    .title-template-three {
+        font-size: 0.22rem;
+        line-height:1;
+        color: $descrFont-color;
+    }
+}
+
+//表单开始
+
+/*全局样式*/
+//
+.overall-situation {
+    .weui-cells {
+        margin-top: 0;
+        line-height: 0.98rem;
+        font-size: 0.32rem;
+        color: #333;
+        //获取短信验证码 格式样式
+        .check-input {
+            .weui-cell__ft {
+                color: #b3b3b3;
+                width: 1.88rem;
+                border-left: 1px solid $separation-color;
+                margin-left: 0.28rem;
+            }
+        }
+        .weui-cell {
+            padding: 0 .32rem;
+            .weui-cell__ft {
+                color: #b3b3b3;
+            }
+            .weui-cell__ft:after {
+                margin-top: -.121rem !important;
+                width: 0.14rem;
+                height: 0.28rem;
+                border: none;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAqCAMAAABr5eDcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzGpzWV4AAAA8dFJOUwDx/Xf2AwoBBvrKZiWfUVfFFJiz4ordQ7kirRqnOXoOS+vq8MA+dBUqbF002pLQLoTkHNOhD98/3PiuoEPPsmAAAAC5SURBVCjPjdNFEsNADARA2zGGmZmZOfr/uxLpODWH7LFry/JKI+dxf31iB89TRK4RavJTOaK+VSUDeruoekPg80nZ3wAfXOVxC7hhFbcl4LVVLIbAfeN2AFw23oEGFeM5cJg2LgAv6qrJDDg7Up4sgXu+crUDnPeU9wPglVVs4hBqxjkYQtQ1TsHleKrq/qP8C7Qa/TP6Cvpi2h3aSdp1PiE6TTp5mhKaKJo+mlSear4BfFv4ZtEt/AKMzjeZQ+k5EQAAAABJRU5ErkJggg==');
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: none;
+                -webkit-transform: none;
+                right: 0;
+            }
+        }
+        .weui-cell:before {
+            left: $spacing;
+            border-top: 1px solid #e0e0e0;
+            height: 0;
+        }
+        .vux-tap-active:active {
+            background-color: #faf8f7;
+        }
+        .weui-cell_access {
+            .weui-cell__ft {
+                // padding-right: .32rem;
+                // 2018/04/13 chenzhenghan modified
+                padding-right: .38rem;
+            }
+        }
+    }
+    .weui-cells:before,
+    .weui-cells:after {
+        border-top: 0;
+        border-bottom: 0;
+        height: 0;
+    }
+}
+
+
+
+
+/*有线有左右填充*/
+
+.margin-wired {
+    .margins {
+        .weui-cell:before {
+            right: .32rem;
+            left: .32rem;
+        }
+    }
+}
+
+
+/*右边字体为为其他颜色的自己加class*/
+
+.font-color {
+    .red0 {
+        .weui-cell__ft {
+            color: #ff4f3f !important;
+        }
+    }
+    .green0 {
+        .weui-cell__ft {
+            color: #1bd299 !important;
+        }
+    }
+    .black0 {
+        .weui-cell__ft {
+            color: #333333 !important;
+        }
+    }
+    .grey {
+        .weui-cell__ft {
+            color: $text-color !important;
+        }
+    }
+}
+
+//底部浮层样式
+.footer-template{
+    .weui-actionsheet__cell{
+        font-size:0.32rem;
+        line-height: 0.98rem;
+        height: 0.98rem;
+        padding: 0;
+    }
+    .weui-actionsheet__action{
+        margin-top: 0.1rem;
+    }
+}
+
+//上下改变箭头
+.arrowhead-change {
+    .change {
+        .weui-cells {
+            margin-top: 0;
+            .weui-cell {
+                .weui-cell__ft:after {
+                    width: 0.14rem;
+                    height: 0.28rem;
+                    border: none;
+                    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAqCAMAAABr5eDcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzGpzWV4AAAA8dFJOUwDx/Xf2AwoBBvrKZiWfUVfFFJiz4ordQ7kirRqnOXoOS+vq8MA+dBUqbF002pLQLoTkHNOhD98/3PiuoEPPsmAAAAC5SURBVCjPjdNFEsNADARA2zGGmZmZOfr/uxLpODWH7LFry/JKI+dxf31iB89TRK4RavJTOaK+VSUDeruoekPg80nZ3wAfXOVxC7hhFbcl4LVVLIbAfeN2AFw23oEGFeM5cJg2LgAv6qrJDDg7Up4sgXu+crUDnPeU9wPglVVs4hBqxjkYQtQ1TsHleKrq/qP8C7Qa/TP6Cvpi2h3aSdp1PiE6TTp5mhKaKJo+mlSear4BfFv4ZtEt/AKMzjeZQ+k5EQAAAABJRU5ErkJggg==');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transform: none;
+                    -webkit-transform: none;
+                    transform: rotate(90deg);
+                    right: 0;
+                }
+                .vux-cell-arrow-down:after {
+                    -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+                .vux-cell-arrow-up:after {
+                    -webkit-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+
+.floating-frame {
+    .floating {
+        .weui-cells {
+            margin-top: 0;
+            .vux-cell-box {
+                .weui-cell {
+                    .vux-popup-picker-value {
+                        padding-right: .06rem;
+                    }
+                    .weui-cell__ft:after {
+                        width: 0.14rem;
+                        height: 0.28rem;
+                        border: none;
+                        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAqCAMAAABr5eDcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzGpzWV4AAAA8dFJOUwDx/Xf2AwoBBvrKZiWfUVfFFJiz4ordQ7kirRqnOXoOS+vq8MA+dBUqbF002pLQLoTkHNOhD98/3PiuoEPPsmAAAAC5SURBVCjPjdNFEsNADARA2zGGmZmZOfr/uxLpODWH7LFry/JKI+dxf31iB89TRK4RavJTOaK+VSUDeruoekPg80nZ3wAfXOVxC7hhFbcl4LVVLIbAfeN2AFw23oEGFeM5cJg2LgAv6qrJDDg7Up4sgXu+crUDnPeU9wPglVVs4hBqxjkYQtQ1TsHleKrq/qP8C7Qa/TP6Cvpi2h3aSdp1PiE6TTp5mhKaKJo+mlSear4BfFv4ZtEt/AKMzjeZQ+k5EQAAAABJRU5ErkJggg==');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        transform: none;
+                        -webkit-transform: none;
+                        transform: rotate(90deg);
+                        right: 0;
+                    }
+                    .vux-cell-arrow-down:after {
+                        -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                    }
+                    .vux-cell-arrow-up:after {
+                        -webkit-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*单列表高度为.98rem*/
+
+.single-list {
+    .weui-cell {
+        height: .98rem;
+    }
+}
+
+
+/*--多列表无线--*/
+
+.list-wireless {
+    .wireless {
+        .weui-cells{
+            line-height: 1;
+            padding: 0.1rem 0;
+            .weui-cell{
+                padding: 0.2rem 0.32rem;
+            }
+            .weui-cell:before {
+                border: 0;
+            }
+        }
+    }
+}
+
+
+/*--多行，正方形列表--*/
+
+.multiline-square {
+    .square {
+        .slot-square {
+            height: .38rem;
+            width: .38rem;
+            background: #b3b3b3;
+            margin-right: .20rem;
+        }
+    }
+}
+
+
+/*-- 双行列表 和描述信息的表单--*/
+
+.double-list {
+    .weui-cells {
+        margin-top: 0;
+        line-height: .49rem;
+        .weui-cell {
+            padding: .24rem .32rem !important;
+            .vux-label{
+                line-height: 1;
+            }
+            .vux-label-desc {
+                display: block;
+                font-size: .24rem;
+                line-height: 1;
+                padding-top: 0.2rem;
+                color: #b3b3b3;
+            }
+        }
+    }
+}
+
+
+/*--单行列表 多行信息表单--*/
+
+.single-more-information {
+    .weui-cell {
+        position: relative;
+        line-height: .42rem;
+        padding: .32rem .32rem !important;
+        .vux-label-desc {
+            font-size: .24rem;
+            color: #b3b3b3;
+        }
+        .weui-cell__ft {
+            color: #b3b3b3;
+            margin-left: 2.4rem;
+            line-height: 1;
+        }
+        .vux-label {
+            line-height: 1;
+            position: absolute;
+            top: .32rem;
+        }
+    }
+}
+
+
+/*--单行信息列表和分割线,一般用于展示标题--*/
+
+.single-title-info {
+    .weui-cell:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0.94rem;
+        right: 0;
+        height: 0;
+        border-bottom: 1px solid #e0e0e0;
+        color: #D9D9D9;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+        left: 0;
+    }
+}
+
+
+/*表单输入 有下划线*/
+
+.input-underline-box {
+    .weui-label {
+        width: auto !important;
+        margin-right: 0.4rem;
+    }
+    .weui-input {
+        caret-color: #b3b3b3;
+    }
+    .weui-input::-webkit-input-placeholder {
+        color: #b3b3b3;
+    }
+    .round {
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: #f5f5f9;
+        border-radius: 50%;
+        // border: 1px solid #e0e0e0;
+        margin-left: 0.15rem;
+        position: relative;
+    }
+}
+
+
+/*表单输入 无下划线*/
+
+.input-onunderline-box {
+    .weui-label {
+        width: auto !important;
+        margin-right: 0.4rem;
+    }
+    .weui-input {
+        caret-color: #b3b3b3;
+        height: .98rem;
+    }
+    .weui-input::-webkit-input-placeholder {
+        color: #b3b3b3;
+    }
+    .round {
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: #f5f5f9;
+        border-radius: 50%;
+        // border: 1px solid #e0e0e0;
+        margin-left: 0.15rem;
+        position: relative;
+    }
+    .weui-cell:before {
+        height: 0;
+        border-top: 0;
+    }
+}
+
+
+/*文本域输入*/
+
+.texttarea-box {
+    .weui-cells {
+        margin-top: 0;
+        font-size: 0.32rem;
+        color: #333;
+        .weui-cell {
+            padding: 0.24rem 0.32rem;
+            .weui-textarea {
+                line-height: 0.44rem;
+                caret-color: #b3b3b3;
+            }
+            .weui-textarea::-webkit-input-placeholder {
+                color: #b3b3b3;
+            }
+        }
+    }
+}
+
+//复选
+.check-box {
+    .vux-check-icon {
+        width: 100%;
+        height: 0.98rem;
+        line-height: 0.98rem;
+    }
+    .weui-icon-circle {
+        width: .38rem;
+        margin-left: 0.32rem;
+        margin-right: 0.17rem;
+    }
+    .weui-cells,
+    .vux-no-group-title {
+        margin-top: 0;
+        line-height: 0.98rem;
+        font-size: 0.32rem;
+    }
+    .weui-cells:before,.weui-cells:after{
+        height: 0;
+        border: 0;
+    }
+    .vux-check-icon{
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .vux-check-icon:last-child{
+        border: 0;
+    }
+    .vux-check-icon>.weui-icon-success:before,
+    .vux-check-icon>.weui-icon-success-circle:before {
+        color: #d33b30;
+    }
+    [class^="weui-icon-"]:before,
+    [class*=" weui-icon-"]:before {
+        font-size: .42rem;
+        margin: 0;
+    }
+    .weui-icon-success-circle {
+        font-size: .32rem;
+        width: .38rem !important;
+        height: 0.38rem;
+        margin-left: .32rem;
+        margin-right: .17rem;
+    }
+}
+
+//单选
+.check-radio {
+    .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+        color: #d33b30;
+        font-size: .32rem;
+    }
+    .weui-icon-checked {
+        width: .38rem !important;
+        height: .38rem !important;
+    }
+    .weui-cells,
+    .vux-no-group-title {
+        margin-top: 0;
+        line-height: 0.98rem;
+        font-size: 0.32rem;
+    }
+    .weui-cells:before,.weui-cells:after {
+        height: 0;
+        border: 0;
+    }
+    .weui-cell {
+        padding: 0 0.32rem;
+        height: 0.98rem;
+        font-size: 0.32rem;
+    }
+    .weui-cell:before {
+        margin-left: -0.32rem;
+        height: 0;
+        border: 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
+//多列表单箭头开始
+    .divili{
+        height:auto;
+        border-bottom: 1px solid #b3b3b3;
+        width: 100%;
+    }
+    .div-after{
+        position: relative;
+
+    }
+    .arrow-tuo{
+            display: block;
+            height: 0.28rem;
+            width:0.14rem;
+            position: absolute;
+            top:calc(50% - 0.14rem);
+            right: 0.3rem;
+        }
+    .list{
+    .weui-cells {
+        margin-top: 0;
+        line-height: 0.98rem;
+        font-size: 0.28rem;
+        color: #333;
+        .weui-cell {
+            padding: 0 .32rem;
+            .weui-cell__ft {
+                color: #b3b3b3;
+                margin-right: 0.3rem;
+            }
+
+        }
+        .weui-cell:before {
+            left: 0;
+            border-top: 1px solid #e0e0e0;
+            height: 0;
+        }
+        .weui-cell_access {
+            .weui-cell__ft {
+                padding-right: .32rem;
+            }
+        }
+    }
+
+
+}
+//多列表单箭头结束
+
+/*金额有单位*/
+
+.amount-form {
+    .vux-cell-primary {
+        color: #b3b3b3 !important;
+    }
+    .weui-cell__ft {
+        color: #ff4f3f !important;
+    }
+    .company-color {
+        color: #b3b3b3;
+    }
+}
+
+
+/*详情表单*/
+
+.details {
+    .weui-cells{
+        line-height: 1;
+        padding: 0.1rem 0.32rem;
+        .weui-cell {
+            padding: 0.2rem 0;
+            line-height: 1;
+            color: #b3b3b3;
+            font-size: .28rem;
+            .vux-label,.weui-cell__ft{
+                font-size: .28rem;
+                line-height: 1;
+            }
+        }
+    }
+    .weui-cell:before {
+        border: 0 !important;
+    }
+}
+
+
+.check-radio {
+    .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+        color: #d33b30;
+        font-size: .32rem;
+    }
+    .weui-icon-checked {
+        width: .38rem !important;
+        height: .38rem !important;
+    }
+}
+
+//滑动tab-demo
+.swiper-tab {
+    .vux-tab {
+        height: 0.98rem;
+        .vux-tab-item {
+            font-size: 0.3rem;
+            color: $ynet-title-color;
+        }
+    }
+    .vux-slider {
+        background-color: $interface-color;
+        overflow-x: hidden;
+    }
+}
+
+/* 全局  右边颜色为#999    如果左边要#333那么添加details2样式 */
+.overall-situation2 {
+    .weui-cells {
+        margin-top: 0;
+        line-height: 0.98rem;
+        font-size: 0.32rem;
+        color: #666;
+        .weui-cell {
+            padding: 0 .32rem;
+            .weui-cell__ft {
+                color: #999;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 3rem;
+            }
+            .weui-cell__ft:after {
+                margin-top: -.121rem !important;
+                width: 0.14rem;
+                height: 0.28rem;
+                border: none;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAqCAMAAABr5eDcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzGpzWV4AAAA8dFJOUwDx/Xf2AwoBBvrKZiWfUVfFFJiz4ordQ7kirRqnOXoOS+vq8MA+dBUqbF002pLQLoTkHNOhD98/3PiuoEPPsmAAAAC5SURBVCjPjdNFEsNADARA2zGGmZmZOfr/uxLpODWH7LFry/JKI+dxf31iB89TRK4RavJTOaK+VSUDeruoekPg80nZ3wAfXOVxC7hhFbcl4LVVLIbAfeN2AFw23oEGFeM5cJg2LgAv6qrJDDg7Up4sgXu+crUDnPeU9wPglVVs4hBqxjkYQtQ1TsHleKrq/qP8C7Qa/TP6Cvpi2h3aSdp1PiE6TTp5mhKaKJo+mlSear4BfFv4ZtEt/AKMzjeZQ+k5EQAAAABJRU5ErkJggg==');
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: none;
+                -webkit-transform: none;
+                right: 0;
+            }
+        }
+        .weui-cell:before {
+            left: 0;
+            height: 0;
+            border-top: 1px solid #e0e0e0;
+        }
+        .vux-tap-active:active {
+            background-color: #faf8f7;
+        }
+        .weui-cell_access {
+            .weui-cell__ft {
+                padding-right: .32rem;
+            }
+        }
+    }
+    .weui-cells:before,
+    .weui-cells:after {
+        border-top: 0;
+        border-bottom: 0;
+        height: 0;
+    }
+}
+
+
+
+//右边字体颜色位#333
+.overall-situation3 {
+    .weui-cells {
+        margin-top: 0;
+        line-height: 0.98rem;
+        font-size: 0.32rem;
+        color: #333;
+        .weui-cell {
+            padding: 0 .32rem;
+            .weui-cell__ft {
+                color: #999;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 3rem;
+            }
+            .weui-cell__ft:after {
+                margin-top: -.121rem !important;
+                width: 0.14rem;
+                height: 0.28rem;
+                border: none;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAqCAMAAABr5eDcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC3UExURQAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzGpzWV4AAAA8dFJOUwDx/Xf2AwoBBvrKZiWfUVfFFJiz4ordQ7kirRqnOXoOS+vq8MA+dBUqbF002pLQLoTkHNOhD98/3PiuoEPPsmAAAAC5SURBVCjPjdNFEsNADARA2zGGmZmZOfr/uxLpODWH7LFry/JKI+dxf31iB89TRK4RavJTOaK+VSUDeruoekPg80nZ3wAfXOVxC7hhFbcl4LVVLIbAfeN2AFw23oEGFeM5cJg2LgAv6qrJDDg7Up4sgXu+crUDnPeU9wPglVVs4hBqxjkYQtQ1TsHleKrq/qP8C7Qa/TP6Cvpi2h3aSdp1PiE6TTp5mhKaKJo+mlSear4BfFv4ZtEt/AKMzjeZQ+k5EQAAAABJRU5ErkJggg==');
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: none;
+                -webkit-transform: none;
+                right: 0;
+            }
+        }
+        .weui-cell:before {
+            left: 0;
+            height: 0;
+            border-top: 1px solid #e0e0e0;
+        }
+        .vux-tap-active:active {
+            background-color: #faf8f7;
+        }
+        .weui-cell_access {
+            .weui-cell__ft {
+                padding-right: .32rem;
+            }
+        }
+    }
+    .weui-cells:before,
+    .weui-cells:after {
+        border-top: 0;
+        border-bottom: 0;
+        height: 0;
+    }
+}
+
+/*详情表单  左边的字体颜色是#333*/
+.details2 {
+    .weui-cell {
+        height: .72rem;
+        color: #333;
+        font-size: .28rem;
+
+    }
+
+    .weui-cell:before {
+        height: 0;
+        border: 0 !important;
+    }
+}
+
+/*详情表单  左边的字体颜色是#666*/
+.details3 {
+    .weui-cell {
+        height: .72rem;
+        color: #666;
+        font-size: .28rem;
+    }
+
+    .weui-cell:before {
+        height: 0;
+        border: 0 !important;
+    }
+}
+
+
+
+
+//转账权限模板样式
+
+.cellDemoComponent{
+    margin-bottom:0.2rem;
+    .weui-cell__ft{
+        color:#333 !important;
+    }
+    .hasNoValue {
+        color: $subtitle-color;
+    }
+    .weui-cells .vux-no-group-title::before{
+        border:1px solid #e0e0e0;
+    }
+     .weui-cells .weui-cell:before{
+        border-top:1px solid #e0e0e0;
+    }
+    .weui-cell__ft.vux-cell-arrow-transition.vux-cell-arrow-down{
+        color:#333;
+    }
+    .weui-cells .weui-cell_access .weui-cell__ft{
+        padding-right:0.32rem;
+        line-height: 1.5;
+        padding: 0.24rem 0.4rem 0.24rem 0.2rem;
+        color:$importantInfo-color;
+    }
+    .weui-input{
+        text-align: right;
+    }
+    box-sizing: border-box;
+    .cellDemo{
+        box-sizing: border-box;
+        height: 0.98rem ;
+        .square {
+            width: 0.6rem;
+            height: 0.6rem;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: $interface-color;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 0.6rem;
+            font-size: 0.43rem;
+            color: #5b5b5b;
+            margin-left:0.1rem;
+        }
+    }
+    .cellArrowSpc{
+        height:auto;
+        min-height: 0.98rem;
+        .weui-cell__ft{
+            padding-right:0.32rem;
+            line-height: 1.5;
+            padding: 0.24rem 0.8rem 0.24rem 0.2rem;
+            color:$importantInfo-color;
+        }
+        .overall-situation {
+            .weui-cells .weui-cell{
+                display: flex;
+                align-items: center;
+            }
+        }
+        .vux-cell-primary{
+            flex:1 0 auto;
+        }
+    }
+ .weui-cells .weui-cell_access .weui-cell__ft{
+        padding-right: .32rem
+    }
+}

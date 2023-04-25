@@ -1,0 +1,11 @@
+.slideleft-leave-active,.slideleft-enter-active{
+    transition:  all 0.3s ease; 
+}
+
+.slideleft-leave-active,.slideleft-enter{
+    right:-400px !important;
+}
+
+.slideleft-leave,.slideleft-enter-active{
+    right: 400px;
+}

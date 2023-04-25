@@ -1,0 +1,192 @@
+.ynet-input-new {
+    height: 1.44rem;
+    margin: 0 .32rem;
+    border-bottom: .01rem solid #dfdfdf;
+    padding: .24rem 0;
+    box-sizing: border-box;
+
+    .ynet-input__title {
+        color: #333;
+        font-size: .24rem;
+        line-height: .32rem;
+    }
+
+    .ynet-input__errMsg {
+        color: #FF001F;
+        font-size: .24rem;
+        line-height: .32rem;
+    }
+
+    .red-star {
+        &::after {
+            color: $ynet-dark-red;
+            content: '*';
+        }
+    }
+
+    .ynet-input__box {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1 1 auto;
+        text-align: right;
+        align-items: center;
+        -webkit-align-items: center;
+        position: relative;
+
+        .ynet-input__box__input {
+            flex-grow: 1;
+            -webkit-flex-grow: 1;
+            text-align: right;
+            color: $ynet-title-color;
+            width: 100%;
+            padding: .2rem 0;
+            font-size: .32rem;
+            line-height: .44rem;
+
+            &::-webkit-input-placeholder {
+                font-size: $fs32;
+                color: $ynet-input-color;
+                line-height: 1.5;
+            }
+        }
+        .ynet-input__box__mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-right: 0.7rem;
+            box-sizing: border-box;
+            z-index: 11;
+            overflow: hidden;
+        }
+        .ynet-input__mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-right: 0.7rem;
+            box-sizing: border-box;
+            z-index: 10;
+            overflow: hidden;
+            .ynet-input__mask__blank_left {
+                font-size: .32rem;
+                line-height: .84rem;
+                color: #000;
+                flex: 0 1 auto;
+                overflow: hidden;
+            }
+            .ynet-input__mask__blank_right {
+                color: #333;
+                flex: 1 1 auto;
+                overflow: hidden;
+            }
+            span {
+                flex: 0 0 auto;
+            }
+        }
+        .is-res {
+            color: $ynet-text-color;
+        }
+        .cursor-android {
+            height: 0.38rem;
+            width: 1px;
+            z-index: 12;
+            flex-grow: 0;
+            -webkit-flex-grow: 0;
+            padding-right: 1px;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .cursor-ios {
+            height: 0.46rem;
+            width: 2px;
+            z-index: 12;
+            flex-grow: 0;
+            padding-right: 1px;
+            -webkit-flex-grow: 0;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .cursor-blink-android {
+            animation-name: cursor-blink-android;
+        }
+        .blink-android {
+            animation: cursor-blink-android 1s steps(1, start) infinite;
+            -webkit-animation: cursor-blink-android steps(1, start) 1s infinite;
+            -o-animation: cursor-blink-android 1s steps(1, start) infinite;
+            -moz-animation: cursor-blink-android 1s steps(1, start) infinite;
+            border: none;
+            margin: 0;
+
+            @include keyframes(cursor-blink-android) {
+                0% {
+                    color: transparent;
+                    background: transparent;
+                }
+                50% {
+                    color: #000;
+                    background: #000;
+                }
+                100% {
+                    color: transparent;
+                    background: transparent;
+                }
+            }
+        }
+        .cursor-blink-ios {
+            animation-name: cursor-blink-ios;
+        }
+        .blink-ios {
+            animation: cursor-blink-ios 1s steps(1, start) infinite;
+            -webkit-animation: cursor-blink-ios steps(1, start) 1s infinite;
+            -o-animation: cursor-blink-ios 1s steps(1, start) infinite;
+            -moz-animation: cursor-blink-ios 1s steps(1, start) infinite;
+            border: none;
+            margin: 0;
+
+            @include keyframes(cursor-blink-ios) {
+                0% {
+                    color: transparent;
+                    background: transparent;
+                }
+                50% {
+                    color: #4169e1;
+                    background: #4169e1;
+                }
+                100% {
+                    color: transparent;
+                    background: transparent;
+                }
+            }
+        }
+
+        .ynet-input__box__clear-icon {
+            flex-grow: 0;
+            -webkit-flex-grow: 0;
+            align-items: center;
+            height: 100%;
+            width: 0.28rem;
+            font-size: $fs28;
+            padding-left: 0.1rem;
+            line-height: .84rem;
+            color: $ynet-input-color;
+            z-index: 13;
+        }
+    }
+
+    .ynet-input__right-icon {
+        flex: 0 1 0.38rem;
+        padding-right: $spacing;
+        padding: ($cell-height - 0.38rem) / 2 $spacing;
+        padding-left: 0.2rem;
+        display: inline-block;
+        width: 0.38rem;
+        height: 0.38rem;
+    }
+}

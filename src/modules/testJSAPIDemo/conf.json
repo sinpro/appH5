@@ -1,0 +1,29 @@
+{
+  "demo": {
+    "third": {
+      "title": "第三方管理"
+    },
+    "cache": {
+      "title": "缓存管理"
+    },
+    "interactive": {
+      "title": "交互管理"
+    },
+    "native": {
+      "title": "客户端native能力管理",
+      "needLogin": false
+    },
+    "route": {
+      "title": "路由管理"
+    },
+    "device": {
+      "title": "设备管理"
+    },
+    "business": {
+      "title": "业务能力管理"
+    },
+    "user": {
+      "title": "用户信息管理"
+    }
+  }
+}

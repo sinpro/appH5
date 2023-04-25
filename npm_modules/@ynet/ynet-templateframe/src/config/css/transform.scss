@@ -1,0 +1,28 @@
+
+$transform-inner: '0' !default;
+
+@function transformPositionFixed () {
+    @if $transform-inner == '1' {
+        @return unquote('absolute')
+    }
+    @return unquote('fixed')
+}
+
+/**
+* 适配手机银行 rem以及内管px单位的转换  rem -> px
+* 针对手机银行 100 * (clientWidth / 750) + 'px'; 
+*/
+@function transformRemToPx ($rem, $base: 100) {
+    @if $transform-inner == '1' {
+        @return ($rem * $base)*320/750 * 1px
+    }
+    @return $rem * 1rem
+}
+
+/**
+* 适配设计稿 rem以及内管px单位的转换  rem -> px
+* 针对设计稿 375
+*/
+@function transformPxToRem ($px, $base: 100 ) {
+    @return $px / $base * 1rem
+}

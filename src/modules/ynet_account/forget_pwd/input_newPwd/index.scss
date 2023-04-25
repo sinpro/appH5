@@ -1,0 +1,60 @@
+.forget-pwd {
+    .color-red {
+        position: relative;
+        p {
+            position: absolute;
+            top: 0.18rem;
+            right: 0.32rem;
+            text-align: right;
+            color: #d33b30;
+            font-size: 0.22rem;
+            padding-left: 0.18rem;
+        }
+    }
+    .weui-cells {
+        .vux-x-input {
+            // padding-right: 0 !important;
+        }
+        margin-top: 0;
+        .weui-cell {
+            color: $importantInfo-color;
+            .weui-cell__ft:last-child {
+                flex: 2;
+            }
+            .weui-cell__ft {
+                padding-right: 0.32rem;
+                color: $importantInfo-color;
+                .vux-cell-value {
+                    color: $importantInfo-color;
+                }
+            }
+            .vux-datetime {
+                padding-right: 0;
+                .vux-datetime-value {
+                    padding-right: 0;
+                }
+                .vux-datetime-value::after {
+                    content: '';
+                    display: none;
+                }
+            }
+            .popup-picker {
+                .weui-cell {
+                    padding-right: 0;
+                    .weui-cell__ft {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .ynet-input {
+            padding-left: 0.32rem !important;
+        }
+        .ynet-cell-native-input {
+            padding-left: 0.32rem !important;
+        }
+    }
+    .prompt{
+        padding: 0rem 0.32rem;
+    }
+}

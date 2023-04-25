@@ -1,0 +1,174 @@
+/*
+    * 混合
+    * @author liyilei
+    * @latest update 2018.4.23
+*/
+
+@mixin weui-icon-clear(){
+    &:before { content: "\EA0F"};
+}
+
+@mixin weui-icon-success-no-circle(){
+    &:before { content: "\EA08"};
+}
+
+@mixin weui-icon-search(){
+    &:before { content: "\EA0E"};
+}
+
+@mixin fs--mixin($fs:$fs) {
+    font-size: $fs;
+    line-height: $fs + 0.1;
+}
+
+@mixin sub-title(){
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.28rem;
+    color: $ynet-text-color;
+    padding: 0.27rem $spacing 0.15rem;
+    line-height: 0.38rem;
+    background: $ynet-background-color;
+}
+
+@mixin btn($width:6.86rem, $height:0.96rem, $hasHorder:false, $fontSize: 0.36rem) {
+    box-sizing: border-box;
+    width: $width;
+    height: $height;
+    font-size: $fontSize;
+    color: #fff;
+    background: #6161F2;
+    border-radius: .08rem;
+
+    @if $hasHorder {
+        border: 1px solid #6161F2;
+    }
+    &:active {
+        background: #4343C8;
+    }
+}
+
+@mixin interlocution__content--pl {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0.34rem;
+}
+
+@mixin cell--mixin {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $cell-height;
+    width: 100%;
+    // overflow: hidden;
+    padding-left: $spacing;
+    background: $default-background-color;
+    font-size: $fs32;
+    line-height: $cell-height;
+    &__title {
+        flex: 0 1 auto;
+        min-width: 1.6rem;
+        max-width: 2.56rem;
+        margin-right: 0.4rem;
+        font-size: $fs32;
+        color: $ynet-title-color;
+    }
+    &::before{
+        position: absolute;
+        left: 0rem;
+        right: 0rem;
+        width: 100%;
+        top: 0;
+        // height: 1px;
+        background: #eee;
+        content: '';
+    }
+    &::after {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: $spacing;
+
+        // left: 0;
+        right: 0;
+        height: 1px;
+        // width: 100%;
+        // background: $ynet-divide-color;
+        border-top: 1px solid $ynet-divide-color;
+        z-index: 1;
+        // transform: scaleY(0.5);
+        // -webkit-transform: scaleY(0.5);
+        content: ' ';
+    }
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@mixin keyframes($animationName) {
+    @keyframes #{$animationName} {
+        @content;
+    }
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-ms-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+}
+
+//the called one need to set 'position:relative'
+@mixin bottom-line {
+    &::after {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: $spacing;
+        // left: 0;
+        right: 0;
+        height: 1px;
+        // width: 100%;
+        // background: $ynet-divide-color;
+        border-top: 1px solid $ynet-divide-color;
+        z-index: 1;
+        // transform: scaleY(0.5);
+        // -webkit-transform: scaleY(0.5);
+        content: ' ';
+    }
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// must set 'width' and 'right'
+@mixin right-arrow($width,$right) {
+    position: relative;
+    display: inline-block;
+    width: $width;
+    height: auto;
+    &::after {
+        position: absolute;
+        right: $right;
+        top: 50%;
+        margin-top: -0.14rem;
+        display: inline-block;
+        width: 0.14rem;
+        height: 0.28rem;
+        content: '';
+        background-size: cover;
+        background-image: $big-arrow;
+    }
+}

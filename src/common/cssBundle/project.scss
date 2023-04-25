@@ -1,0 +1,496 @@
+/*
+    * 公共样式
+    * @one of authors: liyilei
+    * @latest update 2018.4.17
+*/
+@import './vars.scss';
+$ynet-dark-red: #F0472B;//与原来主调色一样
+$ynet-dark-blue: #6161f2;
+$ynet-title-color: #333;
+$ynet-text-color: #666;
+$ynet-input-color: #b3b3b3;
+
+.ynet-global {
+    height: 100%;
+}
+
+.btn-lg {
+    @include btn($hasHorder: false);
+}
+
+.btn-sm {
+    @include btn($width: 3.27rem, $hasHorder: false);
+    border-color: #e0e0e0;
+}
+
+.btn-xs {
+    @include btn($width: 2.2rem, $height: 0.6rem, $hasHorder: false, $fontSize: 0.32rem);
+    border-color: #e0e0e0;
+}
+
+.btn--hollow {
+    color: $ynet-dark-blue;
+    background: #fff;
+    border: 1px solid $ynet-dark-blue;
+
+    &:active {
+        color: #fff;
+    }
+}
+
+//将按钮重置成白色
+.btn--white {
+    color: $ynet-dark-red;
+    background: #fff; // border: 1px solid $ynet-dark-red;
+}
+
+.btn-sm--white {
+    @include btn($width: 3.27rem, $hasHorder: true);
+    background: #fff;
+    border-color: #e0e0e0;
+    color: #000;
+}
+
+// .btn-white {
+//     @include btn($hasHorder: true);
+//     color: $ynet-dark-red;
+//     background: #fff;
+//     border: 1px solid $ynet-dark-red;
+// }
+button[disabled] {
+    color: #fff;
+    background: rgba(97, 97, 242, .3);
+    border: none;
+    border-radius: .08rem;
+    &:active {
+        opacity: 1;
+    }
+}
+
+.btn-box {
+    width: 6.86rem;
+    margin: 0 auto;
+    display: flex; // align-items: center;
+    justify-content: space-around;
+}
+
+.ynet-btn-box {
+    width: 6.86rem;
+    margin: 0 auto;
+    display: flex; // align-items: center;
+    display: -webkit-flex; // align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.ynet-btn-special-box {
+    background: #fff;
+    height: 1.16rem;
+    width: 100%;
+    display: flex; // align-items: center;
+    display: -webkit-flex; // align-items: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.ynet-btn-special-box {
+    .ynet-btn-special {
+        margin-right: 0.32rem;
+        height: 0.56rem;
+        line-height: 0.56rem;
+        font-size: 0.28rem;
+        color: #69a2fc;
+        border: 1px solid #eeeeee;
+        background: #ffffff;
+    }
+    .ynet-btn-special-xs {
+        width: 1.3rem;
+    }
+    .ynet-btn-special-sm {
+        width: 1.8rem;
+    }
+    .ynet-btn-special-normal {
+        width: 2rem;
+    }
+    .ynet-btn-special-big {
+        width: 2.3rem;
+    }
+}
+
+//公共颜色类
+.color-red {
+    color: $ynet-dark-red;
+}
+
+.color333 {
+    color: $ynet-title-color;
+}
+
+.color666 {
+    color: $ynet-text-color;
+}
+
+.colorb3 {
+    color: $ynet-input-color;
+}
+
+.color-green {
+    color: $ynet-green;
+}
+
+.color-blue {
+    color: $ynet-blue;
+}
+
+//标题的标题样式
+.sub-title {
+    @include sub-title; // line-height: 1;
+    // padding: 0.32rem $spacing 0.2rem;
+}
+
+.sub-title-b {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.28rem;
+    color: $ynet-text-color;
+    padding: 0.27rem $spacing 0.15rem;
+    background: #f5f5f9;
+    span {
+        color: #ff4f3f;
+    }
+}
+
+//瀑布流的顶部固定标题
+.scrolling-title {
+    @include fs--mixin(0.28rem);
+    position: fixed;
+    width: 100%;
+    padding: 0.2rem $spacing 0.24rem;
+    top: 0;
+    left: 0;
+    background: #e1e3e6;
+    z-index: 200;
+}
+
+//忘了当初用来干嘛
+// .multi-titile {
+//     color: $ynet-text-color;
+//     font-size: 0.28rem;
+//     line-height: 0.44rem;
+//     //32 - (44 -28)/2 = 24
+//     padding: 0.24rem $spacing 0.12rem;
+// }
+//输入框下面的提示文体
+.input-msg {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0.12rem 0 0.16rem;
+    padding: 0 $spacing;
+    font-size: 0.22rem;
+    line-height: 0.32rem;
+    color: $ynet-subtitle-color; // line-height: 1;
+    // margin: 0.18rem 0 0.2rem;
+}
+
+.input-msg--warning {
+    @extend .input-msg;
+    color: $ynet-dark-red;
+}
+
+.error-message--right {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0.13rem 0 0.15rem;
+    padding: 0 $spacing;
+    font-size: 0.22rem;
+    line-height: 0.32rem;
+    color: $ynet-dark-red;
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+//按钮上方提示提示信息
+.btn-top-msg {
+    font-size: 0.22rem;
+    line-height: 1;
+    margin: 0.40rem 0 0.48rem;
+    color: $ynet-subtitle-color;
+}
+
+// 查询结果展示列表样式增加箭头， created by chenzhenghan on 2018/04/10
+.cells-box {
+    .ynet-result-cell {
+        .ynet-result-cell__value {
+            max-width: 3.82rem;
+        }
+    }
+    position: relative;
+    .addArrow {
+        padding: 0.26rem 0.7rem 0 0.32rem;
+    }
+    &::after {
+        position: absolute;
+        right: $spacing;
+        top: 50%;
+        margin-top: -0.14rem;
+        display: inline-block;
+        width: 0.14rem;
+        height: 0.28rem;
+        content: '';
+        background-size: cover;
+        background-image: $big-arrow;
+    }
+}
+
+//无数据显示时的公共样式
+.no-data-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.32rem;
+    color: #999;
+    img {
+        width: 3rem;
+        height: 1.86rem;
+        margin-top: 1.6rem;
+    }
+    span,
+    div,
+    p {
+        margin-top: 0.8rem;
+        color: #666;
+        font-size: 0.28rem;
+    }
+}
+
+//问答页面
+.interlocution {
+    background: #fff;
+    padding: 0 $spacing;
+    padding-top: 0.05rem;
+    color: $ynet-title-color; //减去多出来答案文字上下行高0.05rem
+    .interlocution__quesetion-box {
+        position: relative;
+        display: flex;
+        padding-top: 0.4rem - 0.05rem;
+        margin-bottom: 0.3rem;
+        font-size: $fs30;
+        line-height: 1;
+        .interlocution__quesetion-key {
+            @include interlocution__content--pl;
+            top: 0.4rem - 0.05rem;
+        }
+        .interlocution__quesetion-content {
+            padding-left: 0.44rem;
+        }
+    }
+    .interlocution__answer-box {
+        position: relative;
+        display: flex;
+        margin-top: 0.3rem - 0.05rem;
+        font-size: 0.22rem;
+        line-height: 0.32rem;
+        color: $ynet-title-color;
+        .interlocution__answer-key {
+            @include interlocution__content--pl;
+        }
+        .interlocution__answer-content {
+            padding-left: 0.44rem;
+        }
+    }
+}
+
+.swiper-result-cell {
+    .ynet-result-cell {
+        background: none;
+    }
+}
+
+// 猎豹金融荟 cell 加粗居中样式
+.ynet-cell-bold.text-center {
+    @include cell--mixin;
+    font-weight: bold;
+    padding-right: 0.32rem;
+    justify-content: center;
+}
+
+//协议样式
+.ynet_protocol_page {
+    background: #fff;
+    height: 100vh;
+    overflow: scroll;
+    padding-bottom: 0.6rem;
+    .protocol_main_title {
+        font-size: 0.4rem;
+        color: $ynet-title-color;
+        text-align: center;
+        line-height: 0.5rem;
+        padding: 0.55rem 0.32rem 0.2rem;
+    }
+    .protocol_sub_title {
+        font-size: 0.3rem;
+        color: $ynet-title-color;
+        line-height: 0.4rem;
+        padding: 0.3rem 0.32rem 0;
+    }
+    .protocol_content {
+        font-size: 0.22rem;
+        color: $ynet-title-color;
+        line-height: 0.32rem;
+        padding: 0.2rem 0.32rem 0;
+        text-align: left;
+        .small_span {
+           padding: 0 0.32rem 0 0.38rem;
+           font-size: 0.22rem;
+           line-height: 0.32rem;
+           color: #333;
+           &:first-child {
+               padding-top: 0.1rem;
+           }
+       }
+    }
+}
+
+// 全屏提示语
+.full-screen-hint {
+    color: #666;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+// 列表页面提示信息
+.list-tips {
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    margin: 0.35rem 0 0.43rem 0;
+    color: #999;
+    padding: 0 0.32rem;
+}
+
+//楼层标题
+.floor-title {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.34rem;
+    color: #333333;
+    background: #fff;
+    padding-left: 0.3rem;
+}
+
+// 页面垫块，正文距离底部保持60ox
+.page-bottom {
+    height: 0.6rem;
+    width: 100%;
+
+}
+
+// h5 fake导航栏的样式
+.ynet-h5-navigation-bar {
+    height: 0.88rem;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .left-arrow {
+        flex: 0 0 auto;
+        padding: 0 0.32rem;
+        height: 0.88rem;
+        font-size: 0.32rem;
+        line-height: 0.88rem;
+        z-index: 13;
+    }
+    .ynet-h5-navigation-bar__main {
+        position: absolute;
+        left:0;
+        bottom: 0;
+        z-index: 12;
+        height: 0.88rem;
+        width: 100%;
+        font-size: 0.36rem;
+        line-height: 0.88rem;
+        text-align: center;
+    }
+    .ynet-h5-navigation-bar__search {
+        flex: 0 0 auto;
+        width: 5.6rem;
+        height: 0.6rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        display: flex;
+        align-items: center;
+        font-size: 0.26rem;
+        line-height: 0.6rem;
+        color: #fff;
+        z-index: 13;
+        img {
+            height: 0.32rem;
+            width: 0.32rem;
+            margin: 0 0.24rem 0 0.5rem;
+        }
+    }
+    .ynet-h5-navigation-bar__secondary {
+        padding: 0 0.32rem;
+        flex: 0 0 auto;
+        height: 0.88rem;
+        font-size: 0.28rem;
+        line-height: 0.88rem;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        z-index: 13;
+        img {
+            height: 0.4rem;
+            width: 0.4rem;
+        }
+    }
+}
+
+.ynet-ocr-input {
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0.32rem;
+    padding: 0.3rem 0;
+
+    > input {
+      display: block;
+      flex-grow: 1;
+      font-size: 0.32rem;
+    }
+
+    .addon {
+      width: 0.44rem;
+      height: 0.44rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+}
+
+.md-cell-item:last-child {
+    .md-cell-item-body {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.md-field-item:last-child {
+    .md-field-item-content {
+        &:before {
+            display: none;
+        }
+    }
+}

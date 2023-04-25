@@ -1,0 +1,19 @@
+.ynet-index-bar{
+	position: relative;
+	height: 100%;
+	.ynet-index-bar_bar{
+		font-size: 0.18rem;
+		position: fixed;
+		right: .1rem;
+		top:30%;
+		z-index: 99999;
+		border-radius: 10px;
+		span{
+			display:block;
+			width: .4rem;
+			height: .4rem;
+			text-align: center;
+			line-height: .4rem;
+		}
+	}
+}

@@ -1,0 +1,113 @@
+{
+  "_from": "@ynet/ynet-ui-floor@^0.0.13",
+  "_id": "@ynet/ynet-ui-floor@0.0.13",
+  "_inBundle": false,
+  "_integrity": "sha512-qmw4/JpxOl+dBXGn2WoG82tgU9/7CWW5ZfMRl4I3E01XVN6W77aR8lv9TKOuw1tI7dUStZ01HejE77PM1gqs/g==",
+  "_location": "/@ynet/ynet-ui-floor",
+  "_phantomChildren": {
+    "@babel/parser": "7.21.4",
+    "@better-scroll/core": "2.5.1",
+    "@better-scroll/indicators": "2.5.1",
+    "@better-scroll/infinity": "2.5.1",
+    "@better-scroll/mouse-wheel": "2.5.1",
+    "@better-scroll/movable": "2.5.1",
+    "@better-scroll/nested-scroll": "2.5.1",
+    "@better-scroll/observe-dom": "2.5.1",
+    "@better-scroll/observe-image": "2.5.1",
+    "@better-scroll/pull-down": "2.5.1",
+    "@better-scroll/pull-up": "2.5.1",
+    "@better-scroll/scroll-bar": "2.5.1",
+    "@better-scroll/slide": "2.5.1",
+    "@better-scroll/wheel": "2.5.1",
+    "@better-scroll/zoom": "2.5.1",
+    "@vue/compiler-core": "3.2.47",
+    "@vue/compiler-dom": "3.2.47",
+    "@vue/compiler-ssr": "3.2.47",
+    "@vue/reactivity-transform": "3.2.47",
+    "@vue/shared": "3.2.47",
+    "estree-walker": "2.0.2",
+    "magic-string": "0.25.9",
+    "nanoid": "3.3.6",
+    "picocolors": "1.0.0",
+    "source-map": "0.6.1",
+    "source-map-js": "1.0.2"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ynet/ynet-ui-floor@^0.0.13",
+    "name": "@ynet/ynet-ui-floor",
+    "escapedName": "@ynet%2fynet-ui-floor",
+    "scope": "@ynet",
+    "rawSpec": "^0.0.13",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.13"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.lbapp.cn/repository/cheetah-h5/@ynet/ynet-ui-floor/-/ynet-ui-floor-0.0.13.tgz",
+  "_shasum": "4ddc21a82667fbe026ac8f7ee910627feb854da1",
+  "_spec": "@ynet/ynet-ui-floor@^0.0.13",
+  "_where": "/Users/shenchenhao/Desktop/创兴银行/chBank-pro/h5",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "bundleDependencies": false,
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.0.0",
+    "better-scroll": "^2.0.5",
+    "core-js": "^3.7.0",
+    "swiper": "^4.5.1",
+    "vue": "^2.6.11"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.9",
+    "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
+    "@ynet/ynet-template-view": "^1.0.27",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "postcss": "^8.1.10",
+    "postcss-loader": "^4.1.0",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^10.1.0",
+    "vue-router": "^3.4.9",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "name": "@ynet/ynet-ui-floor",
+  "scripts": {
+    "clean": "rimraf dist",
+    "clean:node": "rimraf node_modules",
+    "dev": "cross-env TARGET=example vue-cli-service serve --port 7080",
+    "example": "cross-env TARGET=example vue-cli-service build",
+    "lib": "cross-env TARGET=lib vue-cli-service build --entry ./src/index.js --modern --target lib",
+    "lint": "vue-cli-service lint"
+  },
+  "version": "0.0.13"
+}

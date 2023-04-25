@@ -1,0 +1,28 @@
+type: cheetah
+modules: src/modules
+dist: dist
+port: 8080
+scripts:
+  dev: dev
+  build: build:develop
+
+command:
+- name: 清除输出文件
+  shell: npm run clean
+  needCancel: false
+
+- name: 离线包Zip压缩
+  shell: npm run zip
+  needCancel: false
+
+- name: 全局公共包构建
+  shell: npm run common:develop
+  needCancel: false
+
+- name: 构建bundleID映射
+  shell: npm run releaseconfig
+  needCancel: false
+
+- name: 构建并预览选中离线包
+  shell: npm run build:develop $bundles --debug --server
+  needCancel: false

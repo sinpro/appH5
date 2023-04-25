@@ -1,0 +1,41 @@
+{
+  "_from": "@ynet/ynet-template-view@^1.0.27",
+  "_id": "@ynet/ynet-template-view@1.0.30",
+  "_inBundle": false,
+  "_integrity": "sha512-VoDhZUTVNZ2BhjlTJq3GgeBX7iioi628gfC96Z8ef3OiJaKawLwkI0bLMe2q1oN8rZnW3D6prMPuUdQySCpYqQ==",
+  "_location": "/@ynet/ynet-template-view",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ynet/ynet-template-view@^1.0.27",
+    "name": "@ynet/ynet-template-view",
+    "escapedName": "@ynet%2fynet-template-view",
+    "scope": "@ynet",
+    "rawSpec": "^1.0.27",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.27"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.lbapp.cn/repository/cheetah-h5/@ynet/ynet-template-view/-/ynet-template-view-1.0.30.tgz",
+  "_shasum": "42d51e2ff5adaa26f5617f960340e078814cf5e8",
+  "_spec": "@ynet/ynet-template-view@^1.0.27",
+  "_where": "/Users/shenchenhao/Desktop/创兴银行/chBank-pro/h5",
+  "author": {
+    "name": "YJDXSSS"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "deprecated": false,
+  "description": "",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "name": "@ynet/ynet-template-view",
+  "scripts": {},
+  "version": "1.0.30"
+}

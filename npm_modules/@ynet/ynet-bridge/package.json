@@ -1,0 +1,47 @@
+{
+  "_from": "@ynet/ynet-bridge@^2.0.4",
+  "_id": "@ynet/ynet-bridge@2.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-LCsD+0BxUp8y/I+6ZCNdNr9h+yKdkp/jCWyfDxlFxMpmH6KzIcfgQ/A01I1Z5l1aEfKfX+9QhfBmIAujx9d5Ug==",
+  "_location": "/@ynet/ynet-bridge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ynet/ynet-bridge@^2.0.4",
+    "name": "@ynet/ynet-bridge",
+    "escapedName": "@ynet%2fynet-bridge",
+    "scope": "@ynet",
+    "rawSpec": "^2.0.4",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.lbapp.cn/repository/cheetah-h5/@ynet/ynet-bridge/-/ynet-bridge-2.0.4.tgz",
+  "_shasum": "e5f7d3e412a5bbded4eac91faea575dbc41b47da",
+  "_spec": "@ynet/ynet-bridge@^2.0.4",
+  "_where": "/Users/shenchenhao/Desktop/创兴银行/chBank-pro/h5",
+  "author": {
+    "name": "YJDXSSS"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {
+    "@ynet/ynet-docs-tool": "^1.0.0",
+    "@ynet/ynet-ui-cli": "^1.0.9"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "@ynet/ynet-bridge",
+  "scripts": {
+    "build": "ynet-ui-prod",
+    "clean": "rimraf dist",
+    "clean:node": "rimraf node_modules",
+    "dev": "ynet-ui-dev"
+  },
+  "version": "2.0.4"
+}

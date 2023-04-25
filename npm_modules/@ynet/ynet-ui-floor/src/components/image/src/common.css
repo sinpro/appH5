@@ -1,0 +1,30 @@
+.tfloor_image_common .swiper-container-horizontal > .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.tfloor_image_common .swiper-pagination-fraction,
+.tfloor_image_common .swiper-pagination-custom,
+.tfloor_image_common .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 2px;
+}
+
+.tfloor_image_common .tfloor_image_common_pagination_dot.swiper-pagination .swiper-pagination-bullet{
+    
+}
+
+.tfloor_image_common .tfloor_image_common_pagination_rect.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet{
+    border-radius: 0;
+    padding: 0 4px;
+    height: 2px;
+    margin: 0 2px;
+}
+
+.tfloor_image_common .tfloor_image_common_pagination_line.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet{
+    border-radius: 0;
+    padding: 0 4px;
+    height: 2px;
+    margin: 0;
+}

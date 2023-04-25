@@ -1,0 +1,66 @@
+.ynet-msg-code {
+  position: relative;
+  display: flex;
+
+  .ynet-msg-code__page-cell {
+    display: inline-block;
+    flex: 1;
+    margin-right: .32rem;
+
+    input {
+      text-align: right;
+    }
+
+    .ynet-input .ynet-input__box .ynet-input__box__input {
+      flex-grow: 0;
+    }
+    .ynet-input .ynet-input__box .ynet-input__box__clear-icon {
+      flex-grow: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .ynet-msg-code__page-bt {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    line-height: 0.98rem;
+    color: #6161F2;
+    font-size: 0.32rem;
+    position: relative;
+    white-space: nowrap;
+    .tips-color {
+      color: #b3b3b3;
+    }
+    .tip {
+      display: block;
+      max-width: 1.9rem;
+      overflow: hidden;
+    }
+  }
+
+  .ynet-input-new {
+    border-bottom: 0;
+    margin: 0;
+  }
+}
+
+.ynet-msg-code::after {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: $spacing;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid $ynet-divide-color;
+  z-index: 1;
+  transform: scaleY(0.5);
+  content: ' ';
+}
+
+.ynet-msg-code:last-child {
+  &::after {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+/**
+ *2.0版rem单位转3.0版rem
+ */
+@function old2new ($rem, $old: 37.5, $new: 50) {
+    @return strip-units($rem) * $old / $new * 1rem
+  }
+  
+/**
+ *3.0版px转rem单位，px单位取UI稿标注单位即可
+ */
+@function px2rem ($px, $dpr: 2, $base: 50 ) {
+    @return strip-units($px) / $base / $dpr * 1rem
+}
+
+/**
+ *去掉一个值的单位，如12px => 12 eg. strip-units(12px) => 12 
+ */
+@function strip-units($number){ 
+    @return $number / ($number * 0 + 1);
+}
+  

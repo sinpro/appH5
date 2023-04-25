@@ -1,0 +1,25 @@
+{
+	"demo": {
+		"button": {
+			"title": "ynet-button"
+		},
+		"viewbox": {
+			"title": "ynet-viewbox"
+		},
+		"countdown": {
+			"title": "ynet-countdown"
+		},
+		"swiperout": {
+			"title": "ynet-swiperout"
+		},
+		"circle": {
+			"title": "ynet-circle"
+		},
+		"pay":{
+			"title": "pay"
+		},
+		"indexbar": {
+			"title": "ynet-index-bar"
+		}
+	}
+}

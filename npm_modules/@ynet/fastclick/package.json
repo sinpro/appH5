@@ -1,0 +1,42 @@
+{
+  "_from": "@ynet/fastclick@^1.0.0",
+  "_id": "@ynet/fastclick@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-PFlVjmlbsFSREz3+U006ItGZL6uId48ZLEq5zfU4ITrOQQ/upAH1ImPHXbM3bVgOqUWyKwpcO7SN+afHZzorYg==",
+  "_location": "/@ynet/fastclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ynet/fastclick@^1.0.0",
+    "name": "@ynet/fastclick",
+    "escapedName": "@ynet%2ffastclick",
+    "scope": "@ynet",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.lbapp.cn/repository/cheetah-h5/@ynet/fastclick/-/fastclick-1.0.0.tgz",
+  "_shasum": "9ff586c8d03a25bde861edb94b807f9d5e9caa03",
+  "_spec": "@ynet/fastclick@^1.0.0",
+  "_where": "/Users/shenchenhao/Desktop/创兴银行/chBank-pro/h5",
+  "author": {
+    "name": "YJDXSSS"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a `click` event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.",
+  "directories": {
+    "lib": "lib"
+  },
+  "license": "MIT",
+  "main": "lib/fastclick.js",
+  "name": "@ynet/fastclick",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,51 @@
+{
+  "_from": "@ynet/ynet-templateframe@^1.0.0",
+  "_id": "@ynet/ynet-templateframe@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-TpHrE44JohEv5m4hEYSL+tq6hKudt81jA18g8vjP2OuZUsZfLiGw85gOzon6lxGCwMZ9rmHbXMAg1iSw0KyEhw==",
+  "_location": "/@ynet/ynet-templateframe",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@ynet/ynet-templateframe@^1.0.0",
+    "name": "@ynet/ynet-templateframe",
+    "escapedName": "@ynet%2fynet-templateframe",
+    "scope": "@ynet",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://nexus.lbapp.cn/repository/cheetah-h5/@ynet/ynet-templateframe/-/ynet-templateframe-1.0.1.tgz",
+  "_shasum": "820ea75e7933227eeca7631ded3d50151ea7c9eb",
+  "_spec": "@ynet/ynet-templateframe@^1.0.0",
+  "_where": "/Users/shenchenhao/Desktop/创兴银行/chBank-pro/h5",
+  "author": {
+    "name": "YJDXSSS"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "better-scroll": "^1.15.2"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {
+    "@ynet/ynet-ui-cli": "^1.0.11",
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
+    "element-ui": "^2.11.1"
+  },
+  "license": "MIT",
+  "main": "src/frame.js",
+  "name": "@ynet/ynet-templateframe",
+  "scripts": {
+    "build": "ynet-ui-prod",
+    "clean": "rimraf dist",
+    "clean:node": "rimraf node_modules",
+    "dev": "ynet-ui-dev"
+  },
+  "version": "1.0.1"
+}

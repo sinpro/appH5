@@ -1,0 +1,56 @@
+module.exports = {
+    "floorName":"导航栏-样式一",
+    "floorType":"13",
+    "styleType":"01",
+
+    "isShowLine":"1",
+    "divlineType":"0",
+    "divlineColor":'#F5F5FA',
+    "color":"#ffffff",
+    "noteType": '1',
+    "isCustomized": '1',
+    "title": '标题',
+    "styleInfoList": [
+        {
+           "isShow":'1',
+           "picPositionType":'3',
+           "contentType":'3',
+           "picUrl":"",
+           "title":"",
+           "subTitle":"",
+           "styleTypeSub":"",
+           "picLinkType":"1",
+           "picLink":"",
+           "isLoginNeeded":"0",
+           "isIdNeeded":"0",
+        },
+        {
+            "isShow":'1',
+            "picPositionType":'3',
+            "contentType":'3',
+            "picUrl":"",
+            "title":"",
+            "subTitle":"",
+            "styleTypeSub":"",
+            "picLinkType":"1",
+            "picLink":"",
+            "isLoginNeeded":"0",
+            "isIdNeeded":"0",
+        },
+        {
+            "isShow":'1',
+            "picPositionType":'4',
+            "contentType":'3',
+            "picUrl":"",
+            "title":"",
+            "subTitle":"",
+            "styleTypeSub":"1",
+            "picLinkType":"1",
+            "picLink":"",
+            "isLoginNeeded":"0",
+            "isIdNeeded":"0",
+            "ordernNum":"1",
+            "picNum":""
+         }
+    ]
+}

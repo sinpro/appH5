@@ -1,0 +1,257 @@
+{
+    "register": {
+        "index": {
+            "needLogin": false,
+            "title": "快速注册"
+        },
+        "mobile_number_register": {
+            "title": "新用户注册",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "registration_agreement": {
+            "title": "注册协议",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "registered_mobile": {
+            "title": "新用户注册",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "setting_login_pw": {
+            "title": "新用户注册",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "register_success": {
+            "title": "注册结果",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "register_success_openAccount": {
+            "title": "注册结果",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "check_identity": {
+            "title": "身份验证",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "confirm_identity": {
+            "title": "身份验证",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "start_face": {
+            "title": "人脸识别",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "add_bank_card": {
+            "title": "绑定银行卡",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "add_bank_card_home": {
+            "title": "绑定银行卡",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "support_banks": {
+            "title": "支持银行",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "confirm_your_moblie": {
+            "title": "验证银行卡",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        },
+        "set_tran_pwd": {
+            "needLogin": false,
+            "title": "设置交易密码"
+        },
+        "check_tran_pwd": {
+            "needLogin": false,
+            "title": "确认交易密码"
+        },
+        "open_success": {
+            "needLogin": false,
+            "title": "开户结果"
+        },
+        "add_card_success": {
+            "needLogin": false,
+            "title": "绑卡结果"
+        },
+        "my_card_list": {
+            "title": "银行卡",
+            "needLogin": false,
+            "pushParam": {
+                "titleBarColor": 16777215
+            }
+        }
+    },
+    "forget_pwd": {
+        "index": {
+            "title": "忘记密码",
+            "needLogin": false
+        },
+        "checkCard":{
+            "title": "忘记密码",
+            "needLogin": false
+        },
+        "IdCheck": {
+            "title": "忘记密码",
+            "needLogin": false
+        },
+        "faceStart": {
+            "title": "忘记密码",
+            "needLogin": false
+        },
+        "cardList": {
+            "title": "忘记密码",
+            "needLogin": false
+        },
+        "success":{
+            "title": "忘记密码",
+            "needLogin": false
+        },
+        "input_newPwd": {
+            "title": "忘记密码",
+            "needLogin": false
+        }
+    },
+    "login_management": {
+        "index": {
+            "title": "登录管理",
+            "needLogin": false
+        },
+        "change_password_mobile": {
+            "title": "修改登录密码",
+            "needLogin": false
+        },
+        "change_password_confirm": {
+            "title": "修改登录密码",
+            "needLogin": false
+        },
+        "change_password_success": {
+            "title": "修改结果",
+            "needLogin": false
+        },
+        "reset_password_mobile": {
+            "title": "重置登录密码",
+            "needLogin": false
+        },
+        "reset_password_banklist": {
+            "title": "重置登录密码",
+            "needLogin": false
+        },
+        "reset_password_mobile_and_card_info": {
+            "title": "重置登录密码",
+            "needLogin": false
+        },
+        "reset_password_confirm": {
+            "title": "重置登录密码",
+            "needLogin": false
+        },
+        "user_info": {
+            "title": "个人信息",
+            "needLogin": false
+        },
+        "user_info_details": {
+            "title": "个人信息",
+            "needLogin": false
+        },
+        "user_info_nickname": {
+            "title": "昵称",
+            "needLogin": false
+        },
+        "reset_password_success": {
+            "title": "修改结果",
+            "needLogin": false
+        }
+    },
+    "trade_safety_management": {
+        "index": {
+            "title": "支付管理",
+            "needLogin": false
+        },
+        "set_trade_password_card": {
+            "title": "设置交易密码",
+            "needLogin": false
+        },
+        "set_trade_password_moblie": {
+            "title": "设置交易密码",
+            "needLogin": false
+        },
+        "set_trade_password": {
+            "title": "设置交易密码",
+            "needLogin": false
+        },
+        "set_trade_password_confirm": {
+            "title": "确认交易密码",
+            "needLogin": false
+        },
+        "set_trade_password_success": {
+            "title": "设置结果",
+            "needLogin": false
+        },
+        "trade_password": {
+            "title": "交易密码",
+            "needLogin": false
+        },
+        "type_in_trade_password": {
+            "title": "交易密码",
+            "needLogin": false
+        },
+        "confirm_old_trade_password": {
+            "title": "交易密码",
+            "needLogin": false
+        }
+    },
+    "safe_management": {
+        "index": {
+            "title": "安全管理"
+        },
+        "device_management": {
+            "title": "设备管理"
+        }
+    },
+    "query_login_log": {
+        "index": {
+            "title": "登录日志查询"
+        },
+        "detail": {
+            "title": "登录日志查询",
+            "needLogin": false
+        }
+    }
+}
