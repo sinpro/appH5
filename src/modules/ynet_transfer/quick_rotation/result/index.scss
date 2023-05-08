@@ -1,0 +1,22 @@
+.rotation_result {
+    .rotation_result_main {
+        border-radius: 0.32rem;
+        padding: 0.4rem 0 0.6rem; 
+        text-align: center;
+        background: #fff;
+        margin: 0.4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rotation_result_desc {
+        font-size: 0.32rem;
+        margin: 0.3rem 0 0.4rem;
+        font-weight: 500;
+    }
+
+    .rotation_result_footer {
+        width: 50%;
+    }
+}

@@ -1,0 +1,70 @@
+.rotation_index {
+    .rotation_index_head {
+        background: #fff;
+        text-align: center;
+        padding: 0.3rem 0;
+        margin-bottom: 0.2rem;
+
+        .rotation_index_title {
+            font-size: 0.24rem;
+            color: #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .rotation_index_msg {
+                position: absolute;
+                z-index: 101;
+                height: 1.1rem;
+                line-height: 1.1rem;
+                top: 0;
+                left: 38%;
+            }
+
+            /deep/ .md-drop-menu {
+                color: #999;
+                font-size: 0.24rem;
+                position: absolute;
+                z-index: 100;
+            }
+
+            /deep/ .md-drop-menu-bar .bar-item {
+                margin-left: 17%;
+            }
+
+            /deep/ .md-drop-menu-bar::before {
+                display: none;
+            }
+        }
+
+        .rotation_index_money {
+
+            /deep/ .md-input-item-input,
+            .md-input-item-fake {
+                font-size: 0.6rem;
+                font-weight: 500;
+            }
+
+            margin-top: 0.8rem;
+        }
+    }
+
+    .rotation_index_main {
+        &>:first-child {
+            background: #fff;
+            margin-top: 0.2rem;
+        }
+
+        &>:last-child {
+            background: #fff;
+            margin-top: 0.2rem;
+        }
+    }
+
+    .rotation_index_footer {
+        background: #fff;
+        padding: 0.4rem 0.3rem;
+
+    }
+
+}

@@ -1,0 +1,37 @@
+.wrap {
+    width: 100%;
+
+    .rotation_confirmation {
+        .rotation_confirmation_head {
+            background: #fff;
+            text-align: center;
+            padding: 0.3rem 0;
+            margin: 0.2rem 0.4rem;
+            border-radius: 0.32rem;
+
+            .rotation_confirmation_title {
+                font-size: 0.24rem;
+                color: #999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rotation_confirmation_money {
+                font-size: 0.6rem;
+                font-weight: 500;
+                margin-top: 0.2rem;
+                color: #f39e00;
+            }
+        }
+
+        .rotation_confirmation_footer {
+            padding: 0.4rem 0.3rem;
+            display: flex;
+            &>:last-child{
+                margin-left: 0.3rem;
+            }
+        }
+
+    }
+}

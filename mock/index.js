@@ -5,7 +5,7 @@ import axios from 'axios'
  */
 const MockConfig = {
     // mock请求路径
-    mockPath: '/apis',
+    mockPath: '/apis/transfer',
     // 是否开启真机模拟
     bMock: false,
     // mock api
