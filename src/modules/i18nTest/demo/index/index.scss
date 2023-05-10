@@ -1,0 +1,86 @@
+.header_right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 1rem;
+    text-align: center;
+    line-height: .6rem;
+    background: #000;
+    color: #fff;
+
+    &>p {
+        border-bottom: #fff;
+    }
+}
+
+.page_main {
+    .box {
+        margin: .3rem .4rem;
+        border-radius: .26rem;
+        background: #fff;
+        text-align: center;
+        padding: .3rem;
+        font-size: .28rem;
+        color: #999;
+    }
+
+    .buy_money {
+        color: #333;
+        font-size: .56rem;
+        font-weight: 500;
+    }
+
+    .sale_money {
+        color: #666;
+        font-weight: 500;
+        display: inline-block;
+        text-align: left;
+        font-size: .4rem;
+    }
+
+}
+
+/deep/ .md-field {
+    padding: .2rem .3rem;
+}
+
+/deep/ .md-cell-item-body {
+    align-items: flex-start;
+    padding-top: .2rem;
+    padding-bottom: .1rem;
+}
+
+/deep/ .md-cell-item-right {
+    text-align: right;
+    line-height: 1.6;
+    color: #333;
+    max-width: 80%;
+}
+
+/deep/ .md-cell-item-content {
+    font-size: .28rem;
+    color: #999;
+}
+
+.infomation__card-time {
+    font-size: .26rem;
+    color: #999;
+}
+
+/deep/ .md-button {
+    margin: .5rem auto;
+    font-size: .32rem;
+
+    /deep/ .md-button.default {
+        color: #333;
+    }
+
+    /deep/ .md-button.default::after {
+        border-color: #999;
+    }
+}
+
+/deep/ .md-button.block {
+    width: 90%;
+}
