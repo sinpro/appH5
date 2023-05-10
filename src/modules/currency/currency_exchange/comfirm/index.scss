@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+ * @desc 外币兑换确认页
+ * @author wangmy
+ * @date 2023-05-09
+ */
+.wrap {
+    .header_right {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 1rem;
+        text-align: center;
+        line-height: .6rem;
+        background: #000;
+        color: #fff;
+    }
+
+    .page_main {
+        .box {
+            margin: .3rem .4rem;
+            border-radius: .26rem;
+            background: #fff;
+            text-align: center;
+            padding: .3rem;
+            font-size: .28rem;
+            color: #999;
+        }
+
+        .buy_money {
+            color: #333;
+            font-size: .56rem;
+            font-weight: 500;
+        }
+
+        .sale_money {
+            color: #666;
+            font-weight: 500;
+            display: inline-block;
+            text-align: left;
+            font-size: .4rem;
+        }
+
+    }
+}

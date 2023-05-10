@@ -1,0 +1,22 @@
+{
+  "currency_exchange": {
+    "index": {
+      "title": "外币兑换",
+      "needLogin": false
+    },
+    "comfirm": {
+      "title": "确认页",
+      "needLogin": false
+    },
+    "result": {
+      "title": "结果页",
+      "needLogin": false
+    }
+  },
+  "currency_quotation": {
+    "index": {
+      "title": "外币牌价",
+      "needLogin": false
+    }
+  }
+}

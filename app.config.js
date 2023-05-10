@@ -11,8 +11,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'mock'),
     before: function (app) {
       //GET POST请求本地mock代理
-      let mockPath = '/api'
-      let filePaths = glob.sync(path.resolve(__dirname, 'mock/api', '**', '*.js'))
+      let mockPath = '/apis/currency'
+      let filePaths = glob.sync(path.resolve(__dirname, 'mock/apis/currency', '**', '*.js'))
       filePaths.forEach(filePath => {
         let {name} = path.parse(filePath), content = require(filePath)
         app.all(`${mockPath}/${name}`, function (req, res) {

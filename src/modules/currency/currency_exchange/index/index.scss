@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/**
+ * @desc 外币兑换首页
+ * @author wangmy
+ * @date 2023-05-09
+ */
+.wrap {
+    .page_main {
+        .mt15 {
+            margin: .2rem 0;
+        }
+
+        .right {
+            color: #333;
+        }
+
+        .cell_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: .32rem;
+            color: #333;
+        }
+
+        .left {
+            width: 100%;
+        }
+
+        /deep/.md-input-item-input,
+        .md-input-item-fake {
+            font-size: .64rem;
+        }
+
+        /deep/ input::-webkit-input-placeholder {
+            font-size: .32rem;
+        }
+
+        /deep/ input::-moz-input-placeholder {
+            font-size: .32rem;
+        }
+
+        /deep/ input::-ms-input-placeholder {
+            font-size: .32rem;
+        }
+
+        .box {
+            background: #fff;
+            padding: .2rem .3rem 0;
+
+            /deep/ .md-cell-item-body {
+                justify-content: flex-start;
+            }
+
+            /deep/ .md-cell-item-left {
+                flex: 1;
+            }
+
+            /deep/ .md-cell-item-right {
+                flex: 3;
+                justify-content: space-between;
+            }
+
+            /deep/ .md-icon.icon-svg.md {
+                width: .42rem;
+                height: .42rem;
+                line-height: .42rem;
+            }
+        }
+
+        .sale_cell_right {
+            width: 100%;
+            color: #666;
+
+            .desc {
+                color: #999;
+            }
+        }
+
+        /deep/ .md-field {
+            padding: .2rem .3rem;
+        }
+
+        /deep/ .md-field-title {
+            font-size: .32rem;
+            color: #333;
+        }
+
+        /deep/ .md-field-item-left {
+            flex: 1;
+        }
+
+        /deep/ .md-field-item-control {
+            padding-left: .1rem;
+            flex: 3;
+        }
+
+        /deep/ .md-field-item-right {
+            flex: 1;
+        }
+
+        .money {
+            font-size: .4rem;
+            color: #333;
+        }
+
+        .infos {
+            max-width: 90%;
+        }
+
+        .old_rate {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .new_rate {
+            color: #D9001B;
+        }
+
+        .time {
+            font-size: .28rem;
+            color: #666;
+        }
+
+        .pb20 {
+            padding-bottom: .4rem;
+        }
+
+        .selector-item-body {
+            display: flex;
+            align-items: center;
+
+            .selector-item-left {
+                margin-right: .2rem;
+            }
+        }
+    }
+}

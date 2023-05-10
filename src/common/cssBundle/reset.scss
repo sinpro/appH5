@@ -145,3 +145,6 @@
  img {
    display: block
  }
+ * { 
+   touch-action: pan-y; 
+}
